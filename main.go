@@ -53,4 +53,20 @@ func main() {
 		fmt.Println("You are not a valid person")
 	}
 
+	a := 2
+	b := 5
+
+	addTwoNumbers(a, b)
+	addTwoNumbers(10, 20)
+	goDeveloperName()
+}
+
+func addTwoNumbers(numb1 int, numb2 int) {
+	sum := numb1 + numb2
+
+	fmt.Println(sum)
+}
+
+func goDeveloperName() {
+	fmt.Println("Asib")
 }
