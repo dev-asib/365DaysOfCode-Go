@@ -84,6 +84,32 @@ func main() {
 	fmt.Scanln(&myAge)
 	fmt.Println("My Age is ", myAge)
 
+	/// Simple Application
+
+	/// Welcome message
+	fmt.Println("Welcome to our applicatoin")
+	var uName string
+	fmt.Println("Enter your name - ")
+	fmt.Scanln(&uName)
+
+	var numb1 int
+	var numb2 int
+
+	fmt.Println("Enter num 1 - ")
+	fmt.Scanln(&numb1)
+
+	fmt.Println("Enter numb 2 - ")
+	fmt.Scanln(&numb2)
+
+	fmt.Println("Hi, ", uName)
+
+	summation := numb1 + numb2
+
+	fmt.Println("Summation = ", summation)
+
+	fmt.Println("Thanks for using my application")
+	fmt.Println("Good Bye")
+
 }
 
 func addTwoNumbers(numb1 int, numb2 int) {
