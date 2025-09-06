@@ -56,9 +56,18 @@ func main() {
 	a := 2
 	b := 5
 
+	c := 10
+	d := 20
+
 	addTwoNumbers(a, b)
 	addTwoNumbers(10, 20)
 	goDeveloperName()
+	sum := addNumb(a, b)
+	fmt.Print(sum)
+	mul, info := multipleReturn(c, d)
+
+	fmt.Println(mul)
+	fmt.Println(info)
 }
 
 func addTwoNumbers(numb1 int, numb2 int) {
@@ -69,4 +78,16 @@ func addTwoNumbers(numb1 int, numb2 int) {
 
 func goDeveloperName() {
 	fmt.Println("Asib")
+}
+
+/// Single Return Type Function
+
+func addNumb(a int, b int) int {
+	return a + b
+}
+
+/// Multiple Return Type Function
+
+func multipleReturn(n1 int, n2 int) (int, string) {
+	return n1 * n2, "Asib"
 }
