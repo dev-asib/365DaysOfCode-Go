@@ -68,6 +68,22 @@ func main() {
 
 	fmt.Println(mul)
 	fmt.Println(info)
+	welcomeCourse("Asib")
+	friends("Samy, ", "Sabbir")
+
+	/// User input
+
+	var myName string
+
+	fmt.Scanln(&myName)
+
+	fmt.Println("My name is - ", myName)
+
+	var myAge int = 24
+	fmt.Println(myAge)
+	fmt.Scanln(&myAge)
+	fmt.Println("My Age is ", myAge)
+
 }
 
 func addTwoNumbers(numb1 int, numb2 int) {
@@ -90,4 +106,12 @@ func addNumb(a int, b int) int {
 
 func multipleReturn(n1 int, n2 int) (int, string) {
 	return n1 * n2, "Asib"
+}
+
+func welcomeCourse(name string) {
+	fmt.Println("Welcome to the Golang course", name, "Bhai")
+}
+
+func friends(name1 string, name2 string) {
+	fmt.Print("Our friends: ", name1, name2)
 }
