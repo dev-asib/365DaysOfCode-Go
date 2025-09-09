@@ -1,31 +1,18 @@
-// package main
-
-// import (
-// 	"mathlib"
-// )
-
-// func main() {
-// 	mathlib.AddNumbers()
-// 	mathlib.AddTwoNumbers(5, 10)
-// }
-
 package main
 
 import "fmt"
 
-var a int = 10
-var b int = 20
+var a int = 20
 
 func main() {
-	addNumbers(a, b)
 
-}
+	age := 47
 
-func addNumbers(x, y int) {
-	result := x + y
-	printNum(result)
-}
+	if age > 18 {
+		a := 30
+		fmt.Println(a)
+	}
 
-func printNum(num int) {
-	fmt.Println(num)
+	fmt.Println(a)
+
 }
