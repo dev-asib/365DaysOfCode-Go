@@ -1,0 +1,14 @@
+package mathlib
+
+import "fmt"
+
+var A = 10
+var B = 20
+
+func AddNumbers() {
+	fmt.Println(A + B)
+}
+
+func AddTwoNumbers(num1, num2 int) {
+	fmt.Println(num1 + num2)
+}
