@@ -2,10 +2,15 @@ package main
 
 import "fmt"
 
-func add(a, b int) {
-	fmt.Println(a + b)
-}
+var a int = 20
 
 func main() {
-	add(1, 2)
+	fmt.Println("Hello Init Function")
+	fmt.Println(a)
+}
+
+func init() {
+	fmt.Println("This is init function")
+	fmt.Println(a)
+	a = 30
 }
