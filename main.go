@@ -2,15 +2,17 @@ package main
 
 import "fmt"
 
-var a int = 20
-
 func main() {
-	fmt.Println("Hello Init Function")
-	fmt.Println(a)
+
+	func(a, b int) {
+		result := a + b
+		fmt.Println(result)
+
+	}(20, 30)
+
 }
 
 func init() {
-	fmt.Println("This is init function")
-	fmt.Println(a)
-	a = 30
+	fmt.Println("I will be called first")
+
 }
