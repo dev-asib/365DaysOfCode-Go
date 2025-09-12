@@ -2,17 +2,24 @@ package main
 
 import "fmt"
 
+var sum = func(a, b int) {
+	fmt.Println(a + b)
+}
+
 func main() {
 
-	func(a, b int) {
-		result := a + b
-		fmt.Println(result)
+	sum(11, 22)
 
-	}(20, 30)
+	add := func(a int, b int) {
+		fmt.Println(a + b)
+	}
+
+	add(10, 20)
+
+	sum(33, 44)
 
 }
 
 func init() {
-	fmt.Println("I will be called first")
-
+	sum(100, 200)
 }
