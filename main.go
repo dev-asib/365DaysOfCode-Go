@@ -3,16 +3,30 @@ package main
 import "fmt"
 
 func main(){
-	add(20, 30)
+processOperation(5, 7, add)
+sum := callAdd()
+sum(10, 20)
+
 }
 
-func add(a int, b int) {
-	fmt.Println(a+b)
+
+func processOperation(a int, b int, op func (c int, d int)){
+op(a, b)
+}
+
+func add(x int, y int){
+	z := x+y
+	fmt.Println(z)
+}
+
+
+func callAdd() func ( int,  int){
+	return add
 }
 
 /*
- First Order Function
- 01. Object,
- 02. Property,
- 03. Relation
+Higher Order Function
+01. Parameter -> Function
+02. Function -> Return
+03. Both
 */
